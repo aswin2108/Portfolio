@@ -14,24 +14,14 @@ export const Footer = () => {
       <SectionContainer>
         <FooterRc>
           <FooterText>
-            Copyright © {new Date().getFullYear()}. All rights are reserved
+            Did you find this website awesome? Give it a star 🌟 on GitHub!
           </FooterText>
           <FooterRcSocials>
-            <a
-              aria-label="linkedin"
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.linkedin.com"
-            >
-              <FooterRcSocialIcon>
-                <FaLinkedin />
-              </FooterRcSocialIcon>
-            </a>
             <a
               aria-label="github"
               target="_blank"
               rel="noreferrer"
-              href="https://github.com/"
+              href="https://github.com/aswin2108/Portfolio"
             >
               <FooterRcSocialIcon>
                 <FaGithub />

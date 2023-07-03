@@ -1,13 +1,14 @@
 import { styled } from "@mui/material";
 
 export const FooterWrapper = styled("footer")(() => ({
-  backgroundColor: "#2d2e32",
+  backgroundColor: "#141311",
   padding: "5rem 0",
   width: "100%",
 }));
 
 export const FooterText = styled("h3")(() => ({
   fontSize: "1.7rem",
+  paddingRight: "10px",
   color: "white",
 }));
 
@@ -23,7 +24,7 @@ export const SectionContainer = styled("div")(() => ({
 
 export const FooterRc = styled("div")(() => ({
   display: "flex",
-  justifyContent: "space-between",
+  justifyContent: "center",
   alignItems: "center",
   "@media (max-width: 550px)": {
     flexWrap: "wrap",
