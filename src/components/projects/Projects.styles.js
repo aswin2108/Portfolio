@@ -4,7 +4,7 @@ export const ProjectSection = styled("section")(() => ({
   backgroundColor: "black",
   padding: "2rem 0",
   width: "100%",
-  height: "100vh",
+  height: "110vh",
   "@media (max-width: 1020px)": {
     padding: "8rem 0",
     height: "auto",
@@ -12,32 +12,26 @@ export const ProjectSection = styled("section")(() => ({
 }));
 
 export const SectionContainer = styled("div")(() => ({
-  maxWidth: "107rem",
-  padding: "0 4rem",
+  maxWidth: "100%",
   "@media (max-width: 460px)": {
     padding: "0 1.7rem",
     width: "100%",
   },
 }));
 
-export const NewProjects = styled("h2")(() => ({
-  fontSize: "2.6rem",
-  color: "#2d2e32",
-}));
-
 export const SectionContent = styled("div")(()=>({
-  maxWidth: "106rem",
-  margin: "0 auto",
+  width: "100%",
   padding: "0 4rem",
   display: "grid", 
-  gridTemplateColumns: "repeat(2, 1fr)", 
-  gridGap: "2rem", 
+  alignItems: "center",
+  gridTemplateColumns: "repeat(2, 1fr)",
+  gridGap: "1rem", 
   "@media (max-width: 900px)": {
     display: "flex",
     flexDirection: "column",
   },
   "@media (max-width: 400px)": {
-    padding: "0 2rem",
+    padding: "0",
   },
 }));
 
@@ -46,29 +40,21 @@ export const ProjectP = styled("h1")(()=>({
   textAlign: "center",
   color: "white",
   marginTop: "6rem",
-  paddingLeft: "40%",
   "@media (max-width: 900px)":{
-    paddingLeft:"20%",
     fontSize: "3.5rem",
   },
   "@media (max-width: 400px)":{
-    paddingLeft:"20%",
     fontSize: "3.5rem",
     marginTop: "2rem",
     marginBottom: "1rem",
   },
 }));
 
-export const ProjectRow = styled("div")(()=>({
-  display: "flex",
-  justifyContent: "center",
-}));
-
 export const ProjectTile = styled("div")(() => ({
   display: "flex",
-  width: "100%",
+  width: "auto",
   height: "auto",
-  margin: "2rem",
+  margin: "1rem",
   borderRadius: "8px",
   backgroundColor: "black",
   transition: "background-color 0.3s ease, transform 0.3s ease",
@@ -96,6 +82,7 @@ export const ProjectTile = styled("div")(() => ({
   "@media (max-width: 900px)": {
     display: "flex",
     flexDirection: "column",
+    margin: "1rem",
   },
   "@media (max-width: 400px)": {
     margin: "0",
@@ -124,10 +111,8 @@ export const ProjectTitle = styled("h2")(() => ({
 
 export const ProjectAbout = styled("p")(() => ({
   fontSize: "1.6rem",
-  margin: "1rem",
   color: "#8e918f",
   textAlign: "left",
-
   "@media (max-width: 900px)":{
     fontSize: "1.5rem",
     width: "100%",
@@ -136,7 +121,7 @@ export const ProjectAbout = styled("p")(() => ({
 
 
 export const ProjectImg = styled("img")(() => ({
-  maxHeight: "20rem",
+  maxHeight: "18rem",
   height: "100%", 
   borderRadius: "20px",
   padding: "1rem",
