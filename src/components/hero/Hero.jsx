@@ -137,7 +137,7 @@ export const Hero = () => {
                   aria-label="resume"
                   rel="noreferrer"
                   target="_blank"
-                  href="https://example.com/resume.pdf"
+                  href="https://drive.google.com/file/d/1YpWiUwnvDSR9s5WlgOhpw4sbEFcLwg8w/view?usp=sharing"
                 >
                   <HeroTextSpanI className="fa-solid fa-file-alt" name={"green"}></HeroTextSpanI>
                 </HeroTextSpanA>
@@ -145,7 +145,7 @@ export const Hero = () => {
                   aria-label="Coding"
                   rel="noreferrer"
                   target="_blank"
-                  href="https://your-coding-profile"
+                  href="https://leetcode.com/aswins2108/"
                 >
                   <HeroTextSpanI className="fas fa-code" name={"red"}></HeroTextSpanI>
                 </HeroTextSpanA>

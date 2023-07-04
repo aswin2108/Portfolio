@@ -1,13 +1,15 @@
 {
   "name": "aswin-portfolio-v1",
+  "homepage": "https://aswin2108.github.io/Portfolio",
   "version": "1.0.0",
   "description": "This is a v1 of my portfolio website",
-  "repository": "https://github.com/aswin2108/portfolio.git",
+  "repository": "https://github.com/aswin2108/Portfolio.git",
   "author": "aswin2108 <aswins2108@gmail.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
     "build": "react-scripts build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",

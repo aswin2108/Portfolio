@@ -12,7 +12,7 @@ import {
   ProjectLink
 } from "./Projects.styles";
 
-import { TiaraImg, BroImg,PortfolioImg } from "../../images";
+import { TiaraImg, BroImg,PortfolioImg, Spyware } from "../../images";
 
 export const Projects = () => {
 
@@ -20,30 +20,30 @@ export const Projects = () => {
     {
       img: BroImg,
       title: "BroDiary📖",
-      github: "d",
-      live: "",
-      description: "Brodiary is an amssjioihweofihwofhfowh hdshsodh dcosdc sdcsdisd ochsdhsc   d XIH  SX I DIWEDKA K ikv il",
+      github: "https://github.com/aswin2108/BroDiary",
+      live: "https://64a46cb30ed0ff09c1ccff55--friendly-squirrel-a1b6f8.netlify.app/",
+      description: "Discover yourself through words. Analyze your emotions with sentiment analysis and converse with a supportive chatbot.",
     },
     {
       img: TiaraImg,
       title: "Tiara Clothing 👔👗",
-      github: "d",
-      live: "ddd",
-      description: "Brodiary is an amssjioihweofihwofhfowh hdshsodh dcosdc sdcsdisd ochsdhsc   d XIH  SX I DIWEDKA K ikv il",
+      github: "https://github.com/aswin2108/TIARA-CLOTHING",
+      live: "https://64a04ed5de74513fcc7bd9f7--deft-pasca-9d0407.netlify.app/",
+      description: "Discover trendy clothing items for all on this React-based e-commerce website. Browse categories, add to cart, and simulate the checkout process.",
     },
     {
       img: PortfolioImg,
       title: "Portfolio 👦🏽",
-      github: "d",
-      live: "ddd",
-      description: "Brodiary is an amssjioihweofihwofhfowh hdshsodh dcosdc sdcsdisd ochsdhsc   d XIH  SX I DIWEDKA K ikv il",
+      github: "https://github.com/aswin2108/Portfolio",
+      live: "",
+      description: "This project showcases my skills, projects, and contributions. It acts as an online resume and a platform to highlight my accomplishments. You are here right now...!",
     },
     {
-      img: PortfolioImg,
+      img: Spyware,
       title: "Spyware 🕵🏻‍♂️",
-      github: "d",
-      live: "ddd",
-      description: "Brodiary is an amssjioihweofihwofhfowh hdshsodh dcosdc sdcsdisd ochsdhsc   d XIH  SX I DIWEDKA K ikv il",
+      github: "https://github.com/aswin2108/Screenshot-Keylogger",
+      live: "",
+      description: "This Java Keylogger with Screen Scraper is a software program designed for educational purposes to demonstrate keylogging and screen scraping techniques.",
     },
   ];
 
@@ -59,8 +59,8 @@ export const Projects = () => {
               <ProjectTitle>{project.title}</ProjectTitle>
               <ProjectAbout>{project.description}</ProjectAbout>
               <ProjectLinks>
-               <ProjectLink href={project.github}>GitHub</ProjectLink>
-               {project.live !== "" ? <ProjectLink href={project.live}>Live</ProjectLink> : <div></div>}
+               <ProjectLink href={project.github} target="_blank">GitHub</ProjectLink>
+               {project.live !== "" ? <ProjectLink href={project.live} target="_blank">Live</ProjectLink> : <div></div>}
              </ProjectLinks>
               </ProjectDetails>
             </ProjectTile>
