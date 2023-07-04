@@ -1,6 +1,6 @@
 ## My Portfolio
 
-Welcome to my portfolio! This project showcases my skills, projects, and contributions. It serves as an online resume and a platform to highlight my accomplishments.
+Welcome to my [portfolio](https://aswin2108.github.io/Portfolio/)! This project showcases my skills, projects, and contributions. It serves as an online resume and a platform to highlight my accomplishments. Do star the repo if you liked it...!
 
 ## Table of Contents
 
