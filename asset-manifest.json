@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.70b6e5cf.css",
+    "main.js": "/Portfolio/static/js/main.575c34ff.js",
+    "static/media/my-img.png": "/Portfolio/static/media/my-img.3bb4c95035729dfef791.png",
+    "static/media/right-muc.gif": "/Portfolio/static/media/right-muc.2c31094c8985143ba350.gif",
+    "static/media/Hi.gif": "/Portfolio/static/media/Hi.d93720933c608f6178fb.gif",
+    "static/media/spyware.jpg": "/Portfolio/static/media/spyware.f3418bc5bb91e736906d.jpg",
+    "static/media/tiaraImg.jpg": "/Portfolio/static/media/tiaraImg.1dec27d4d4c8be81bd9f.jpg",
+    "static/media/portfolioImg.jpg": "/Portfolio/static/media/portfolioImg.64f557ac32c2d4edf12f.jpg",
+    "static/media/GDSC.webp": "/Portfolio/static/media/GDSC.458be0a9a89be7dd53e4.webp",
+    "static/media/broImg.jpg": "/Portfolio/static/media/broImg.d7a0ea09100bbab2f7be.jpg",
+    "static/media/24PR.png": "/Portfolio/static/media/24PR.3c44ab4521bbe313281c.png",
+    "static/media/Hacktoberfest.jpg": "/Portfolio/static/media/Hacktoberfest.35a865e97c4fe5718672.jpg",
+    "static/media/open-genus.png": "/Portfolio/static/media/open-genus.5f1901784c2909c7fdaf.png",
+    "static/media/mysql.svg": "/Portfolio/static/media/mysql.e055e76cc6f04745cd7252c8a8696383.svg",
+    "static/media/react.svg": "/Portfolio/static/media/react.afac9c43724070bf6674f2692b7356a9.svg",
+    "index.html": "/Portfolio/index.html",
+    "static/media/cpp.svg": "/Portfolio/static/media/cpp.fd1f9f607ba45af3fdea8cd43799bba9.svg",
+    "static/media/java.svg": "/Portfolio/static/media/java.a6e4d40e437ca48833761bf124cb5f7a.svg",
+    "static/media/python.svg": "/Portfolio/static/media/python.ab5b883c7057f0d1476bf89b193c1331.svg",
+    "static/media/javascript.svg": "/Portfolio/static/media/javascript.de4c2594613e34b15666206bbede7327.svg",
+    "static/media/css3.svg": "/Portfolio/static/media/css3.9cecabbf6ce67609c48bc4f280a11002.svg",
+    "static/media/firebase.svg": "/Portfolio/static/media/firebase.1d6e9156003af9e41dd8a4e7fbff4c33.svg",
+    "static/media/html.svg": "/Portfolio/static/media/html.6e7b1b463015c056aeb9a624c8dc2876.svg",
+    "main.70b6e5cf.css.map": "/Portfolio/static/css/main.70b6e5cf.css.map",
+    "main.575c34ff.js.map": "/Portfolio/static/js/main.575c34ff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.70b6e5cf.css",
+    "static/js/main.575c34ff.js"
+  ]
+}
