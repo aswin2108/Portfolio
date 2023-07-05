@@ -12,6 +12,8 @@ import {
   ProjectLink
 } from "./Projects.styles";
 
+import Stars from "../../images/star2.jpg";
+
 import { TiaraImg, BroImg,PortfolioImg, Spyware } from "../../images";
 
 export const Projects = () => {
@@ -21,7 +23,7 @@ export const Projects = () => {
       img: BroImg,
       title: "BroDiary📖",
       github: "https://github.com/aswin2108/BroDiary",
-      live: "https://64a46cb30ed0ff09c1ccff55--friendly-squirrel-a1b6f8.netlify.app/",
+      live: "https://strong-sundae-b9e5ef.netlify.app/",
       description: "Discover yourself through words. Analyze your emotions with sentiment analysis and converse with a supportive chatbot.",
     },
     {
@@ -48,7 +50,13 @@ export const Projects = () => {
   ];
 
   return (
-    <ProjectSection id="projects">
+    <ProjectSection id="projects" style={{
+      backgroundImage: `url(${Stars})`,
+      backgroundAttachment: "fixed",
+      backgroundSize: "100% 100%",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
+    }}>
       <SectionContainer>
       <ProjectP>PROJECTS 💻</ProjectP>
         <SectionContent>

@@ -11,6 +11,8 @@ import Java from "../../images/icons/java.svg";
 import Python from "../../images/icons/python.svg";
 import MySql from "../../images/icons/mysql.svg";
 
+import Stars from "../../images/star2.jpg";
+// import Stars from "../../images/stars.jpg";
 import {
   HeroWrapper,
   SectionContainer,
@@ -89,7 +91,14 @@ export const Hero = () => {
 
 
   return (
-    <HeroWrapper id="home">
+    <HeroWrapper id="home" style={{
+      backgroundImage: `url(${Stars})`,
+      backgroundAttachment: "fixed",
+      backgroundSize: "fill",
+      backgroundSize: "100% 100%",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
+    }}>
       <SectionContainer>
         <SectionContent>
           <HeroMain>
@@ -97,7 +106,7 @@ export const Hero = () => {
             <HeroTextH1>Computer Engineering Student</HeroTextH1>
             <HeroTextSpanImg src={HiGif} alt="waving_hand" />
               <HeroTextP>
-                Hai, I'm Aswin Shailajan, a final year computer science engineering 
+                Hi, I'm Aswin Shailajan, a final year computer science engineering 
                 student from VIT 👨🏻‍🎓
               </HeroTextP>
               <HeroTextSpan>

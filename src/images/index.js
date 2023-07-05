@@ -1,9 +1,9 @@
 export {default as HiGif} from './Hi.gif';
+export {default as ShootingStar} from './shooting-star.gif';
 export {default as TiaraImg} from './tiaraImg.jpg';
 export {default as BroImg} from './broImg.jpg';
 export {default as PortfolioImg} from './portfolioImg.jpg';
 export {default as Spyware} from './spyware.jpg';
-export {default as RightHand} from './right-muc.gif';
 export {default as Opengenus} from './open-genus.png';
 export {default as PR24} from './24PR.png';
 export {default as Atsign} from './Atsign.png';

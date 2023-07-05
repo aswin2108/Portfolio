@@ -1,5 +1,4 @@
 import { 
-    RightHand,
     PR24,
     Atsign,
     Carbon,
@@ -12,6 +11,8 @@ import {
     RareTech,
     ScoreLabs,
     WebGoat,
+    ShootingStar,
+    Opengenus,
 } from "../../images";
 
 import { 
@@ -31,9 +32,9 @@ import {
     ContributionUL,
     ContriUlLi,
     ContriImg,
-    ContriName,
 } from "./Experience.styles";
-import { Opengenus } from "../../images";
+
+import Stars from "../../images/star2.jpg";
 
 export const Experience = () => {
 
@@ -129,9 +130,15 @@ export const Experience = () => {
       ]
       
     return (
-        <ExperienceSection id="experience">
+        <ExperienceSection id="experience" style={{
+          backgroundImage: `url(${Stars})`,
+          backgroundAttachment: "fixed",
+          backgroundSize: "100% 100%",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}>
             <ExperienceContainer>
-                <ExperienceP><img width="60px" src={RightHand} style={{ marginBottom: "-1.5rem" }}/>EXPERIENCE </ExperienceP>
+                <ExperienceP><img width="100px" src={ShootingStar} style={{ marginBottom: "-1.5rem" }}/>    EXPERIENCE </ExperienceP>
                 <ExperienceContent>
                 {experienceDetails.map((experience)=>(
                     <ExperienceTile key={experience.orgName}>

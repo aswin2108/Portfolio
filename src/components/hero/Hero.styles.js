@@ -108,7 +108,7 @@ export const HeroTextSpan = styled("span")(() => ({
 
 export const HeroTextSpanA = styled("a")(() => ({
   fontSize: "3rem",
-  color: "#2d2e32",
+  color: "#828782",
 }));
 
 export const HeroTextSpanI = styled("i")(({name}) => ({
@@ -218,7 +218,7 @@ export const Skills = styled("div")(() => ({
 export const SkillsP = styled("p")(() => ({
   marginRight: "2rem",
   paddingRight: "1rem",
-  borderRight: "2px solid rgba(45, 46, 50, 0.5)",
+  borderRight: "2px solid #828782",
   fontFamily: ["Mulish", "sans-serif"],
   fontWeight: 600,
   color: "#828782",
