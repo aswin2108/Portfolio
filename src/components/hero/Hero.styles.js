@@ -88,6 +88,10 @@ export const HeroTextP = styled("p")(() => ({
   color: "#828782",
   fontFamily: "Mulish, sans-serif",
   lineHeight: 1.6,
+  "@media (max-width: 1100px)": {
+    marginBottom: "5rem",
+    fontSize: "1.5rem",
+  },
   "@media (max-width: 900px)": {
     marginBottom: "5rem",
   },
@@ -113,13 +117,15 @@ export const HeroTextSpanA = styled("a")(() => ({
 
 export const HeroTextSpanI = styled("i")(({name}) => ({
   transition: "all 0.2s",
+  color: name === "blue" ? 
+                      "#147efb" : 
+                      name === "red" ? 
+                      "#d40606" 
+                      : name === "yellow" ? 
+                      "#f0ed43" : "#06b817",
   ":hover": {
-    color: name === "blue" ? 
-                        "#147efb" : 
-                        name === "red" ? 
-                        "#d40606" 
-                        : name === "yellow" ? 
-                        "#f0ed43" : "#06b817",
+    transform: "scale(1.2)",
+    transition: "all 0.2s ease-in-out",
   },
 }));
 

@@ -28,10 +28,10 @@ export const Projects = () => {
     },
     {
       img: TiaraImg,
-      title: "Tiara Clothing 👔👗",
+      title: "Tiara Clothing👔👗",
       github: "https://github.com/aswin2108/TIARA-CLOTHING",
       live: "https://64a04ed5de74513fcc7bd9f7--deft-pasca-9d0407.netlify.app/",
-      description: "Discover trendy clothing items for all on this React-based e-commerce website. Browse categories, add to cart, and simulate the checkout process.",
+      description: "Discover trendy clothing items for all on this React-based e-commerce website. Browse and experience E-shopping",
     },
     {
       img: PortfolioImg,

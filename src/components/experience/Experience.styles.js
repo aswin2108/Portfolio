@@ -28,6 +28,11 @@ export const ExperienceP = styled ("h2")(()=>({
     color: "white",
 }));
 
+export const StarGif = styled ("img")(()=>({
+  width: "100px",
+  marginBottom: "-1.5rem"
+}));
+
 export const ExperienceContent = styled("div")(()=>({
     maxWidth: "106rem",
   padding: "0 4rem",

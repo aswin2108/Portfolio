@@ -79,7 +79,7 @@ export const ProjectTile = styled("div")(() => ({
   "&:hover::before": {
     opacity: 1,
   },
-  "@media (max-width: 900px)": {
+  "@media (max-width: 1100px)": {
     display: "flex",
     flexDirection: "column",
     margin: "1rem",
@@ -90,7 +90,9 @@ export const ProjectTile = styled("div")(() => ({
 }));
 export const ProjectDetails = styled("div")(()=>({
   maxWidth: "50%",
-  "@media (max-width: 900px)":{
+  height: "auto",
+  overflow: "hidden",
+  "@media (max-width: 1100px)":{
     maxWidth: "100%",
   },
 }))
@@ -102,7 +104,7 @@ export const ProjectTitle = styled("h2")(() => ({
   paddingTop: "1rem",
   paddingBottom: "1rem",
   marginBottom: "1rem", 
-  "@media (max-width: 900px)":{
+  "@media (max-width: 1250px)":{
     fontSize: "1.8rem",
     width: "100%",
   },
@@ -113,7 +115,7 @@ export const ProjectAbout = styled("p")(() => ({
   fontSize: "1.6rem",
   color: "#8e918f",
   textAlign: "left",
-  "@media (max-width: 900px)":{
+  "@media (max-width: 1100px)":{
     fontSize: "1.5rem",
     width: "100%",
   },
@@ -127,7 +129,7 @@ export const ProjectImg = styled("img")(() => ({
   padding: "1rem",
   objectFit: "cover",
   alignSelf: "center",
-  "@media (max-width: 900px)":{
+  "@media (max-width: 1100px)":{
     maxHeight: "15rem"
   },
 }));

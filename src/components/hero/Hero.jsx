@@ -107,7 +107,9 @@ export const Hero = () => {
             <HeroTextSpanImg src={HiGif} alt="waving_hand" />
               <HeroTextP>
                 Hi, I'm Aswin Shailajan, a final year computer science engineering 
-                student from VIT 👨🏻‍🎓
+                student @VIT 👨🏻‍🎓 | SWE Intern @OpenGenus Foundation | Contributor @Hyperledger, 
+                Linux Foundation | Open Source Contributor | MLH Hackathon Winner | 
+                Active on LeetCode | Technical Writer
               </HeroTextP>
               <HeroTextSpan>
                 <HeroTextSpanA

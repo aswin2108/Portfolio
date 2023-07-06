@@ -19,6 +19,7 @@ import {
     ExperienceSection, 
     ExperienceContainer, 
     ExperienceP, 
+    StarGif,
     ExperienceContent,
     ExperienceTile, 
     ExperienceImg, 
@@ -138,7 +139,7 @@ export const Experience = () => {
           backgroundPosition: "center",
         }}>
             <ExperienceContainer>
-                <ExperienceP><img width="100px" src={ShootingStar} style={{ marginBottom: "-1.5rem" }}/>    EXPERIENCE </ExperienceP>
+                <ExperienceP><StarGif src={ShootingStar}/>    EXPERIENCE </ExperienceP>
                 <ExperienceContent>
                 {experienceDetails.map((experience)=>(
                     <ExperienceTile key={experience.orgName}>

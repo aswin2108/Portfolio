@@ -21,7 +21,7 @@ export const Nav = styled("nav")(() => ({
 
 export const NavLogo = styled("h3")(() => ({
   cursor: "pointer",
-  fontFamily: "Fredericka the Great, cursive",
+  fontFamily: "Caprasimo, cursive",
   fontSize: "25px",
   color: "white",
 }));
