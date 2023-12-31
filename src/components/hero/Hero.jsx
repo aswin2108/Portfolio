@@ -10,9 +10,8 @@ import Firebase from "../../images/icons/firebase.svg";
 import Java from "../../images/icons/java.svg";
 import Python from "../../images/icons/python.svg";
 import MySql from "../../images/icons/mysql.svg";
-
 import Stars from "../../images/star2.jpg";
-// import Stars from "../../images/stars.jpg";
+
 import {
   HeroWrapper,
   SectionContainer,
@@ -31,6 +30,12 @@ import {
   SkillsUl,
   SkillsUlLi,
   SkillsUlLiImg,
+  IconLinkden,
+  IconGithub,
+  IconMail,
+  IconArticle,
+  IconFile,
+  IconCode,
 } from "./Hero.styles";
 
 export const Hero = () => {
@@ -118,7 +123,7 @@ export const Hero = () => {
                   target="_blank"
                   href="https://www.linkedin.com/in/aswin-shailajan/"
                 >
-                  <HeroTextSpanI className="fa-brands fa-linkedin" name={"blue"}></HeroTextSpanI>
+                 <IconLinkden/>
                 </HeroTextSpanA>
                 <HeroTextSpanA
                   aria-label="github"
@@ -126,7 +131,7 @@ export const Hero = () => {
                   target="_blank"
                   href="https://github.com/aswin2108"
                 >
-                  <HeroTextSpanI className="fa-brands fa-github" name={"red"}></HeroTextSpanI>
+                  <IconGithub/>
                 </HeroTextSpanA>
                 <HeroTextSpanA
                   aria-label="email"
@@ -134,7 +139,7 @@ export const Hero = () => {
                   target="_blank"
                   href="mailto:aswins2108@gmail.com"
                 >
-                  <HeroTextSpanI className="fas fa-envelope" name={"yellow"}></HeroTextSpanI>
+                  <IconMail />
                 </HeroTextSpanA>
                 <HeroTextSpanA
                   aria-label="articles"
@@ -142,7 +147,7 @@ export const Hero = () => {
                   target="_blank"
                   href="https://iq.opengenus.org/author/aswin-shailajan/"
                 >
-                  <HeroTextSpanI className="fas fa-newspaper" name={"blue"}></HeroTextSpanI>
+                  <IconArticle />
                 </HeroTextSpanA>
                 <HeroTextSpanA
                   aria-label="resume"
@@ -150,7 +155,7 @@ export const Hero = () => {
                   target="_blank"
                   href="https://drive.google.com/file/d/1YpWiUwnvDSR9s5WlgOhpw4sbEFcLwg8w/view?usp=sharing"
                 >
-                  <HeroTextSpanI className="fa-solid fa-file-alt" name={"green"}></HeroTextSpanI>
+                  <IconFile />
                 </HeroTextSpanA>
                 <HeroTextSpanA
                   aria-label="Coding"
@@ -158,7 +163,7 @@ export const Hero = () => {
                   target="_blank"
                   href="https://leetcode.com/aswins2108/"
                 >
-                  <HeroTextSpanI className="fas fa-code" name={"red"}></HeroTextSpanI>
+                 <IconCode />
                 </HeroTextSpanA>
               </HeroTextSpan>
             </HeroText>
