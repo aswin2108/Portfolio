@@ -2,6 +2,11 @@ import { styled } from "@mui/material";
 import { keyframes } from "@emotion/react";
 import myImage from "../../images/my-img.png";
 
+import { FaLinkedin, FaGithub } from "react-icons/fa6";
+import { FaFileContract } from "react-icons/fa";
+import { SiGmail,SiLeetcode  } from "react-icons/si";
+import { GrArticle } from "react-icons/gr";
+
 export const HeroWrapper = styled("section")(() => ({
   display: "flex",
   flexDirection: "column",
@@ -115,17 +120,52 @@ export const HeroTextSpanA = styled("a")(() => ({
   color: "#828782",
 }));
 
-export const HeroTextSpanI = styled("i")(({name}) => ({
-  transition: "all 0.2s",
-  color: name === "blue" ? 
-                      "#147efb" : 
-                      name === "red" ? 
-                      "#d40606" 
-                      : name === "yellow" ? 
-                      "#f0ed43" : "#06b817",
+export const IconLinkden = styled(FaLinkedin)(()=>({
+  transition: "transform 0.3s ease-in-out",
+  color:"#4285F4",
+
   ":hover": {
     transform: "scale(1.2)",
-    transition: "all 0.2s ease-in-out",
+  },
+}));
+export const IconGithub = styled(FaGithub)(()=>({
+  transition: "transform 0.3s ease-in-out",
+  color:"#DB4437",
+
+  ":hover": {
+    transform: "scale(1.2)",
+  },
+}));
+export const IconMail = styled(SiGmail)(()=>({
+  transition: "transform 0.3s ease-in-out",
+  color:"#F4B400",
+
+  ":hover": {
+    transform: "scale(1.2)",
+  },
+}));
+export const IconArticle = styled(GrArticle)(()=>({
+  transition: "transform 0.3s ease-in-out",
+  color:"#4285F4",
+
+  ":hover": {
+    transform: "scale(1.2)",
+  },
+}));
+export const IconFile = styled(FaFileContract)(()=>({
+  transition: "transform 0.3s ease-in-out",
+  color:"#0F9D58",
+
+  ":hover": {
+    transform: "scale(1.2)",
+  },
+}));
+export const IconCode = styled(SiLeetcode)(()=>({
+  transition: "transform 0.3s ease-in-out",
+  color:"#DB4437",
+
+  ":hover": {
+    transform: "scale(1.2)",
   },
 }));
 
