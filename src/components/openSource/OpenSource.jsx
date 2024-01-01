@@ -116,7 +116,7 @@ export const OS = () => {
             y: 0, 
             opacity: 1,
             transition: {
-                delay: 0.25*id,
+                delay: 0.3*id,
             }
         }),
       };
@@ -135,6 +135,7 @@ export const OS = () => {
             <ContributionUL>
             {openSourceOrg.map((org) => (
                 <motion.div
+                    key={org.id}
                     ref={ref}
                     initial="hidden"
                     animate={inView ? "visible" : "hidden"}
@@ -143,6 +144,7 @@ export const OS = () => {
                     >
                 <ContriUlLi key={org.title} bgcolour={org.colour}>
                     <ContriImg
+                    key={org.title}
                     src={org.icon}
                     title={org.title}
                     alt="org-logo"

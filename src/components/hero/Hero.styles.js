@@ -173,21 +173,21 @@ export const HeroTextSpanImg = styled("img")(() => ({
   position: "absolute",
   width: "5rem",
   height: "5rem",
-  top: "16rem",
+  top: "14rem",
   right: "20rem",
   "@media (max-width: 900px)": {
-    right: "19rem",
-    top: "22rem"
+    right: "21rem",
+    top: "19rem"
   },
   "@media (max-width: 500px)": {
-    top: "9.5rem",
-    right: "15rem",
+    top: "11.5rem",
+    right: "17.5rem",
     width: "4.5rem",
     height: "4.5rem",
   },
   "@media (max-width: 400px)": {
     right: "15rem",
-    top: "10rem",
+    top: "12rem",
   },
   "@media (max-width: 380px)": {
     right: "15rem",
@@ -195,7 +195,7 @@ export const HeroTextSpanImg = styled("img")(() => ({
   },
   "@media (max-width: 370px)": {
     right: "14rem",
-    top: "13.5rem",
+    top: "12.5rem",
   },
 }));
 
