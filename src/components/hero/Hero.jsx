@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 
+import { HeroTitleText } from "../HeroTitle/heroTitle";
+
 import { HiGif } from "../../images";
 import Html from "../../images/icons/html.svg";
 import Css from "../../images/icons/css3.svg";
@@ -23,7 +25,6 @@ import {
   HeroTextP,
   HeroTextSpan,
   HeroTextSpanA,
-  HeroTextSpanI,
   HeroImage,
   Skills,
   SkillsP,
@@ -108,7 +109,8 @@ export const Hero = () => {
         <SectionContent>
           <HeroMain>
             <HeroText id="hero-text">
-            <HeroTextH1>Computer Engineering Student</HeroTextH1>
+            <HeroTitleText/>
+            
             <HeroTextSpanImg src={HiGif} alt="waving_hand" />
               <HeroTextP>
                 Hi, I'm Aswin Shailajan, a final year computer science engineering 
