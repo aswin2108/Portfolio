@@ -12,13 +12,13 @@ const rubberEffect= keyframes`
     transform: scale3d(1, 1, 1);
     }
     20% {
-    transform: scale3d(1.3, 0.75, 1);
+    transform: scale3d(1.15, 0.85, 1);
     }
     40% {
-    transform: scale3d(0.85, 1, 1);
+    transform: scale3d(0.95, 1, 1);
     }
     60% {
-    transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.05, 0.95, 1);
     }
     80% {
     transform: scale3d(0.9, 1.05, 1);
