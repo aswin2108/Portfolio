@@ -1,16 +1,4 @@
 import { 
-    PR24,
-    Atsign,
-    Carbon,
-    CbioPortal,
-    GDSC,
-    Hacktoberfest,
-    LeetCode,
-    OpenShift,
-    PythonScripts,
-    RareTech,
-    ScoreLabs,
-    WebGoat,
     ShootingStar,
     Opengenus,
 } from "../../images";
@@ -29,10 +17,6 @@ import {
     ExperienceDes, 
     ExperienceSkill, 
     SkillTag,
-    OpensourceTitle,
-    ContributionUL,
-    ContriUlLi,
-    ContriImg,
 } from "./Experience.styles";
 
 import Stars from "../../images/star2.jpg";
@@ -67,68 +51,7 @@ export const Experience = () => {
         },
       ];
 
-      const openSourceOrg = [
-        {
-            title: "24 Pull Requests 2022",
-            icon: PR24,
-            colour: "#f57171"
-        },
-        {
-            title: "Hacktoberfest 2022",
-            icon: Hacktoberfest,
-            colour: "#65b8f7"
-        },
-        {
-            title: "Carbon Language",
-            icon: Carbon,
-            colour: "#faf7f7"
-        },
-        {
-            title: "@atsign-foundation",
-            icon: Atsign,
-            colour: "#f08d1d"
-        },
-        {
-            title: "cBioPortal",
-            icon: CbioPortal,
-            colour: "#faf7f7"
-        },
-        {
-            title: "GDSC",
-            icon: GDSC,
-            colour: "#b630f0"
-        },
-        {
-            title: "LeetCode",
-            icon: LeetCode,
-            colour: "#f0a422"
-        },
-        {
-            title: "OpenShipt",
-            icon: OpenShift,
-            colour: "#d60b15"
-        },
-        {
-            title: "Python Scripts",
-            icon: PythonScripts,
-            colour: "#ecf026"
-        },
-        {
-            title: "RaRe-Technologies",
-            icon: RareTech,
-            colour: "#3baff7"
-        },
-        {
-            title: "ScoreLabs",
-            icon: ScoreLabs,
-            colour: "#34fa3b"
-        },
-        {
-            title: "WebGoat",
-            icon: WebGoat,
-            colour: "#e8a735"
-        },
-      ]
+
       
     return (
         <ExperienceSection id="experience" style={{
@@ -157,18 +80,7 @@ export const Experience = () => {
                     </ExperienceTile>
                 ))}
                 </ExperienceContent>
-                <OpensourceTitle>Open Source Programs & Contributions</OpensourceTitle>
-                <ContributionUL>
-                {openSourceOrg.map((org) => (
-                    <ContriUlLi key={org.title} bgcolour={org.colour}>
-                      <ContriImg
-                        src={org.icon}
-                        title={org.title}
-                        alt="org-logo"
-                      /> 
-                    </ContriUlLi>
-                  ))}
-                </ContributionUL>
+                
             </ExperienceContainer>
         </ExperienceSection>
     );

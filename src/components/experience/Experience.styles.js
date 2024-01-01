@@ -5,7 +5,7 @@ export const ExperienceSection = styled("section")(()=>({
     backgroundColor: "black",
     padding: "2rem 0",
     width: "100%",
-    height: "130vh",
+    height: "100vh",
     "@media (max-width: 720px)": {
         height: "190vh",
       },

@@ -221,7 +221,7 @@ const moveUpAnimation = keyframes`
   100% {
     transform: translateY(0%);
   }
-  animation-fill-mode: forwards; // Add this line
+  animation-fill-mode: forwards; 
 `;
 
 export const HeroImage = styled("div")(() => ({
