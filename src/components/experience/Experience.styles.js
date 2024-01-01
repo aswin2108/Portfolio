@@ -5,9 +5,21 @@ export const ExperienceSection = styled("section")(()=>({
     backgroundColor: "black",
     padding: "2rem 0",
     width: "100%",
-    height: "100vh",
+    height: "170vh",
+    "@media (max-width: 900px)": {
+        height: "220vh",
+      },
     "@media (max-width: 720px)": {
-        height: "190vh",
+        height: "220vh",
+      },
+    "@media (max-width: 570px)": {
+        height: "240vh",
+      },
+    "@media (max-width: 480px)": {
+        height: "260vh",
+      },
+    "@media (max-width: 450px)": {
+        height: "220vh",
       },
 }));
 
@@ -89,7 +101,7 @@ export const ExperienceTile = styled("div")(()=>({
 export const ExperienceImg = styled("img")(()=>({
     height: "100%", 
     width: "30rem",
-    borderRadius: "100px",
+    borderRadius: "50px",
     padding: "1rem",
     objectFit: "cover",
     alignSelf: "center",
