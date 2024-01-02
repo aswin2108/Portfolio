@@ -14,7 +14,7 @@ import {
 
 import Stars from "../../images/star2.jpg";
 
-import { TiaraImg, BroImg,PortfolioImg, Spyware } from "../../images";
+import { TiaraImg, BroImg,PortfolioImg, Spyware } from "../../images/index";
 
 export const Projects = () => {
 

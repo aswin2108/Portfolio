@@ -56,7 +56,6 @@ export const ProjectTile = styled("div")(() => ({
   height: "auto",
   margin: "1rem",
   borderRadius: "8px",
-  // backgroundColor: "black",
   transition: "background-color 0.3s ease, transform 0.3s ease",
   boxShadow: "0 2px 8px rgba(0, 0, 0, 0.3)", 
   position: "relative",

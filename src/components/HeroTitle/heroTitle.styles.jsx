@@ -3,8 +3,6 @@ import { keyframes } from "@emotion/react";
 
 export const HeroText = styled("div")(() => ({
     "@media (max-width: 900px)": {
-        // marginLeft: "11rem",
-        // alignItems: "center",
         marginBottom: "6rem",
     },
 }));
@@ -40,7 +38,6 @@ const rubberEffect= keyframes`
     "@media (max-width: 900px)": {
         fontSize: "5rem",
         left: "2rem",
-        // align: "center",
         width: "100%"
     },
     "@media (max-width: 500px)": {
