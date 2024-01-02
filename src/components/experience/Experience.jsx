@@ -3,7 +3,7 @@ import {
     Opengenus,
     Hyperledger,
     Chubb,
-} from "../../images";
+} from "../../images/index";
 
 import { 
     ExperienceSection, 

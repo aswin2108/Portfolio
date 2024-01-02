@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 import { HeroTitleText } from "../HeroTitle/heroTitle";
 
-import { HiGif } from "../../images";
+import { HiGif } from "../../images/index";
 import Html from "../../images/icons/html.svg";
 import Css from "../../images/icons/css3.svg";
 import Js from "../../images/icons/javascript.svg";

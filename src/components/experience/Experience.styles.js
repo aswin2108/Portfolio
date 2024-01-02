@@ -1,5 +1,4 @@
 import { styled } from "@mui/material";
-import { fontSize } from "@mui/system";
 
 export const ExperienceSection = styled("section")(()=>({
     backgroundColor: "black",

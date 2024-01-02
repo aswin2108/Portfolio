@@ -15,7 +15,7 @@ import {
     RareTech,
     ScoreLabs,
     WebGoat,
-} from "../../images";
+} from "../../images/index";
 
 import { 
     OpenSource,
