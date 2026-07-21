@@ -3,16 +3,20 @@ import { useEffect } from "react";
 import { HeroTitleText } from "../HeroTitle/heroTitle";
 
 import { HiGif } from "../../images/index";
-import Html from "../../images/icons/html.svg";
-import Css from "../../images/icons/css3.svg";
-import Js from "../../images/icons/javascript.svg";
-import React from "../../images/icons/react.svg";
-import Cpp from "../../images/icons/cpp.svg";
-import Firebase from "../../images/icons/firebase.svg";
-import Java from "../../images/icons/java.svg";
-import Python from "../../images/icons/python.svg";
-import MySql from "../../images/icons/mysql.svg";
-import Stars from "../../images/star2.jpg";
+import {
+  SiGo,
+  SiCplusplus,
+  SiCsharp,
+  SiDotnet,
+  SiTypescript,
+  SiJavascript,
+  SiDart,
+  SiAngular,
+  SiReact,
+  SiFlutter,
+  SiFirebase,
+  SiHtml5,
+} from "react-icons/si";
 
 import {
   HeroWrapper,
@@ -30,7 +34,6 @@ import {
   SkillsP,
   SkillsUl,
   SkillsUlLi,
-  SkillsUlLiImg,
   IconLinkden,
   IconGithub,
   IconMail,
@@ -41,43 +44,18 @@ import {
 
 export const Hero = () => {
   const skillsIcons = [
-    {
-      img: Cpp,
-      title: "C++",
-    },
-    {
-      img: React,
-      title: "React",
-    },
-    {
-      img: Html,
-      title: "HTML5",
-    },
-    {
-      img: Css,
-      title: "CSS3",
-    },
-    {
-      img: Js,
-      title: "Java Script",
-    },
-    {
-      img: Firebase,
-      title: "Firebase",
-    },
-    {
-      img: MySql,
-      title: "MySql",
-    },
-    {
-      img: Java,
-      title: "Java",
-    },
-    {
-      img: Python,
-      title: "Python",
-    },
-    
+    { Icon: SiGo, title: "Go (Golang)", color: "#00ADD8" },
+    { Icon: SiCplusplus, title: "C++", color: "#00599C" },
+    { Icon: SiCsharp, title: "C#", color: "#239120" },
+    { Icon: SiDotnet, title: ".NET", color: "#512BD4" },
+    { Icon: SiTypescript, title: "TypeScript", color: "#3178C6" },
+    { Icon: SiJavascript, title: "JavaScript", color: "#F7DF1E" },
+    { Icon: SiDart, title: "Dart", color: "#0175C2" },
+    { Icon: SiAngular, title: "Angular", color: "#DD0031" },
+    { Icon: SiReact, title: "React", color: "#61DAFB" },
+    { Icon: SiFlutter, title: "Flutter", color: "#02569B" },
+    { Icon: SiFirebase, title: "Firebase", color: "#FFCA28" },
+    { Icon: SiHtml5, title: "HTML / CSS", color: "#E34F26" },
   ];
 
   useEffect(() => {
@@ -97,14 +75,7 @@ export const Hero = () => {
 
 
   return (
-    <HeroWrapper id="home" style={{
-      backgroundImage: `url(${Stars})`,
-      backgroundAttachment: "fixed",
-      backgroundSize: "fill",
-      backgroundSize: "100% 100%",
-      backgroundRepeat: "no-repeat",
-      backgroundPosition: "center",
-    }}>
+    <HeroWrapper id="home">
       <SectionContainer>
         <SectionContent>
           <HeroMain>
@@ -113,10 +84,11 @@ export const Hero = () => {
             
             <HeroTextSpanImg src={HiGif} alt="waving_hand" />
               <HeroTextP>
-                Hi, I'm Aswin Shailajan, a final year computer science engineering 
-                student @VIT 👨🏻‍🎓 | Technology Intern @CHUBB | Ex-SWE Intern @OpenGenus Foundation | Ex-Contributor @Hyperledger, 
-                Linux Foundation | Open Source Contributor | MLH Hackathon Winner | 
-                Active on LeetCode | Technical Writer
+                Hi, I'm Aswin Shailajan, a Software Development Engineer @CHUBB 👨🏻‍💻 |
+                BTech CSE @VIT | Ex-SWE Intern @OpenGenus Foundation | Ex-Contributor
+                @Hyperledger, Linux Foundation | Full-Stack Developer across .NET, Go,
+                Angular &amp; Flutter | Open Source Contributor | MLH Hackathon Winner |
+                Technical Writer
               </HeroTextP>
               <HeroTextSpan>
                 <HeroTextSpanA
@@ -155,7 +127,7 @@ export const Hero = () => {
                   aria-label="resume"
                   rel="noreferrer"
                   target="_blank"
-                  href="https://drive.google.com/file/d/1YpWiUwnvDSR9s5WlgOhpw4sbEFcLwg8w/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1jgLz2W4Jns7uZK-p0zth7EK7TCBKUcdK/view?usp=sharing"
                 >
                   <IconFile />
                 </HeroTextSpanA>
@@ -178,12 +150,14 @@ export const Hero = () => {
             <SkillsP>Tech Stack</SkillsP>
             <div className="logos">
               <SkillsUl>
-                {skillsIcons.map((icon) => (
-                  <SkillsUlLi key={icon.title}>
-                    <SkillsUlLiImg
-                      src={icon.img}
-                      title={icon.title}
-                      alt="skill-icon"
+                {skillsIcons.map((icon, i) => (
+                  <SkillsUlLi
+                    key={icon.title}
+                    title={icon.title}
+                    style={{ "--glow": icon.color, animationDelay: `${(i % 6) * 0.4}s` }}
+                  >
+                    <icon.Icon
+                      style={{ width: "3rem", height: "3rem", color: icon.color }}
                     />
                   </SkillsUlLi>
                 ))}

@@ -25,8 +25,6 @@ import {
     ContriImg,
 } from "./OpenSource.styles";
 
-import Stars from "../../images/star2.jpg";
-
 export const OS = () => {
     const openSourceOrg = [
         {
@@ -104,56 +102,60 @@ export const OS = () => {
       ];
 
       const [ref, inView] = useInView({
-        triggerOnce: true, 
+        triggerOnce: true,
       });
 
-      const riseUpAnimation = {
-        hidden: { 
-            y: -500, 
-            opacity: 0 
+      // Each tile warps in with a springy scale-up + half spin, staggered
+      // one after another so they feel like they materialise from the stars.
+      const warpInAnimation = {
+        hidden: {
+            scale: 0,
+            rotate: -180,
+            opacity: 0,
         },
-        visible: (id) => ({ 
-            y: 0, 
+        visible: (i) => ({
+            scale: 1,
+            rotate: 0,
             opacity: 1,
             transition: {
-                delay: 0.3*id,
-            }
+                type: "spring",
+                stiffness: 180,
+                damping: 12,
+                delay: 0.08 * i,
+            },
         }),
       };
 
       return(
-        
-        <OpenSource id="opensource" style={{
-            backgroundImage: `url(${Stars})`,
-            backgroundAttachment: "fixed",
-            backgroundSize: "100% 100%",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "center",
-          }}>
+
+        <OpenSource id="opensource">
             <OpensourceTitle>Open Source Programs & Contributions</OpensourceTitle>
-            
-            <ContributionUL>
-            {openSourceOrg.map((org) => (
+
+            <ContributionUL ref={ref}>
+            {openSourceOrg.map((org, index) => (
                 <motion.div
                     key={org.id}
-                    ref={ref}
                     initial="hidden"
                     animate={inView ? "visible" : "hidden"}
-                    variants={riseUpAnimation}
-                    custom={org.id}
+                    variants={warpInAnimation}
+                    custom={index}
+                    whileHover={{ scale: 1.15, rotate: 6 }}
+                    transition={{ type: "spring", stiffness: 300, damping: 15 }}
                     >
-                <ContriUlLi key={org.title} bgcolour={org.colour}>
+                <ContriUlLi
+                    bgcolour={org.colour}
+                    style={{ animationDelay: `${(index % 6) * 0.35}s` }}
+                >
                     <ContriImg
-                    key={org.title}
                     src={org.icon}
                     title={org.title}
                     alt="org-logo"
-                    /> 
+                    />
                     </ContriUlLi>
                     </motion.div>
                 ))}
             </ContributionUL>
-            
+
         </OpenSource>
       );
 }

@@ -1,13 +1,12 @@
 import { styled } from "@mui/material";
 
 export const ProjectSection = styled("section")(() => ({
-  backgroundColor: "black",
-  padding: "2rem 0",
+  backgroundColor: "transparent",
+  padding: "2rem 0 8rem",
   width: "100%",
-  height: "110vh",
+  height: "auto",
   "@media (max-width: 1020px)": {
     padding: "8rem 0",
-    height: "auto",
   },
 }));
 
@@ -22,10 +21,10 @@ export const SectionContainer = styled("div")(() => ({
 export const SectionContent = styled("div")(()=>({
   width: "100%",
   padding: "0 4rem",
-  display: "grid", 
+  display: "grid",
   alignItems: "center",
   gridTemplateColumns: "repeat(2, 1fr)",
-  gridGap: "1rem", 
+  gridGap: "1rem",
   "@media (max-width: 900px)": {
     display: "flex",
     flexDirection: "column",
@@ -40,6 +39,7 @@ export const ProjectP = styled("h1")(()=>({
   textAlign: "center",
   color: "white",
   marginTop: "6rem",
+  marginBottom: "2rem",
   "@media (max-width: 900px)":{
     fontSize: "3.5rem",
   },
@@ -57,7 +57,7 @@ export const ProjectTile = styled("div")(() => ({
   margin: "1rem",
   borderRadius: "8px",
   transition: "background-color 0.3s ease, transform 0.3s ease",
-  boxShadow: "0 2px 8px rgba(0, 0, 0, 0.3)", 
+  boxShadow: "0 2px 8px rgba(0, 0, 0, 0.3)",
   position: "relative",
   "&:hover": {
     transform: "translateY(-10px)",
@@ -102,12 +102,12 @@ export const ProjectTitle = styled("h2")(() => ({
   color: "#edf2ef",
   paddingTop: "1rem",
   paddingBottom: "1rem",
-  marginBottom: "1rem", 
+  marginBottom: "1rem",
   "@media (max-width: 1250px)":{
     fontSize: "1.8rem",
     width: "100%",
   },
-  
+
 }));
 
 export const ProjectAbout = styled("p")(() => ({
@@ -120,10 +120,26 @@ export const ProjectAbout = styled("p")(() => ({
   },
 }));
 
+export const ProjectTags = styled("div")(() => ({
+  display: "flex",
+  flexWrap: "wrap",
+  gap: "0.6rem",
+  marginTop: "1.4rem",
+}));
+
+export const ProjectTag = styled("span")(() => ({
+  fontSize: "1.15rem",
+  color: "#d8dbe0",
+  background: "rgba(255, 255, 255, 0.08)",
+  border: "1px solid rgba(255, 255, 255, 0.12)",
+  padding: "0.3rem 0.8rem",
+  borderRadius: "999px",
+  fontFamily: "Mulish, sans-serif",
+}));
 
 export const ProjectImg = styled("img")(() => ({
   maxHeight: "18rem",
-  height: "100%", 
+  height: "100%",
   borderRadius: "20px",
   padding: "1rem",
   objectFit: "cover",
@@ -135,17 +151,20 @@ export const ProjectImg = styled("img")(() => ({
 
 export const ProjectLinks = styled("div")(() => ({
   display: "flex",
-  justifyContent: "space-between",
+  justifyContent: "flex-start",
+  gap: "0.5rem",
+  marginTop: "1.6rem",
 }));
 
 export const ProjectLink = styled("a")(() => ({
   fontSize: "1.4rem",
-  margin: "0.5rem",
+  margin: "0.5rem 0",
   color: "black",
   background: "white",
-  padding: "0.5rem 1rem",
+  padding: "0.5rem 1.2rem",
   borderRadius: "4px",
   textDecoration: "none",
+  fontWeight: 600,
   "&:hover": {
     background: "#f1f1f1",
   },

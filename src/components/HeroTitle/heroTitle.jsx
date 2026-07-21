@@ -8,17 +8,17 @@ export const HeroTitleText = () => {
     const titleWords = [
         {
         id: 1,
-        word: "Computer",
+        word: "Software",
         clr: "#DB4437",
         },
         {
         id: 2,
-        word: "Engineering",
+        word: "Development",
         clr: "#F4B400",
         },
         {
         id: 3,
-        word: "Student",
+        word: "Engineer",
         clr: "#0F9D58",
         },
     ];

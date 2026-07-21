@@ -1,4 +1,10 @@
 import { styled } from "@mui/material";
+import { keyframes } from "@emotion/react";
+
+const floatDrift = keyframes`
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+`;
 
 export const OpenSource = styled("div")(()=>({
     maxWidth: "100%",
@@ -53,8 +59,12 @@ export const ContriUlLi = styled("li")(({bgcolour})=>({
     backgroundColor: "black",
     boxShadow: "0px 0px 20px white",
     transition: "box-shadow 0.3s ease",
+    animation: `${floatDrift} 4s ease-in-out infinite`,
     "&:hover": {
         boxShadow: `0px 0px 45px ${bgcolour}`,
+    },
+    "@media (prefers-reduced-motion: reduce)": {
+        animation: "none",
     },
 }));
 

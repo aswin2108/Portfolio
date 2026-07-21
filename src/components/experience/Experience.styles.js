@@ -1,25 +1,10 @@
 import { styled } from "@mui/material";
 
 export const ExperienceSection = styled("section")(()=>({
-    backgroundColor: "black",
-    padding: "2rem 0",
+    backgroundColor: "transparent",
+    padding: "2rem 0 8rem",
     width: "100%",
-    height: "170vh",
-    "@media (max-width: 900px)": {
-        height: "220vh",
-      },
-    "@media (max-width: 720px)": {
-        height: "220vh",
-      },
-    "@media (max-width: 570px)": {
-        height: "240vh",
-      },
-    "@media (max-width: 480px)": {
-        height: "260vh",
-      },
-    "@media (max-width: 450px)": {
-        height: "220vh",
-      },
+    height: "auto",
 }));
 
 export const ExperienceContainer = styled("div")(()=>({

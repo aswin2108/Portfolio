@@ -19,3 +19,5 @@ export {default as ScoreLabs} from './ScoreLabs.png';
 export {default as WebGoat} from './WebGoat.jpg';
 export {default as Hyperledger} from './Hyperledger.webp';
 export {default as Chubb} from './Chubblogo.jpg';
+export {default as MediaBackup} from './media-backup.svg';
+export {default as Payroll} from './payroll.svg';

@@ -1,0 +1,51 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pyBg" x1="0" y1="0" x2="600" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#512BD4"/>
+      <stop offset="1" stop-color="#DD0031"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#pyBg)"/>
+  <g opacity="0.12" fill="#ffffff">
+    <circle cx="80" cy="50" r="4"/>
+    <circle cx="540" cy="70" r="3"/>
+    <circle cx="500" cy="330" r="5"/>
+    <circle cx="60" cy="300" r="3"/>
+  </g>
+
+  <!-- Calendar / payslip card -->
+  <g transform="translate(70,110)">
+    <rect x="0" y="0" width="230" height="200" rx="18" fill="#ffffff"/>
+    <rect x="0" y="0" width="230" height="46" rx="18" fill="#512BD4"/>
+    <rect x="0" y="28" width="230" height="18" fill="#512BD4"/>
+    <circle cx="40" cy="12" r="6" fill="#ffffff" opacity="0.9"/>
+    <circle cx="190" cy="12" r="6" fill="#ffffff" opacity="0.9"/>
+    <!-- rows -->
+    <rect x="24" y="70" width="120" height="12" rx="6" fill="#d7d2f2"/>
+    <rect x="24" y="98" width="182" height="10" rx="5" fill="#eceaf7"/>
+    <rect x="24" y="122" width="182" height="10" rx="5" fill="#eceaf7"/>
+    <rect x="24" y="146" width="120" height="10" rx="5" fill="#eceaf7"/>
+    <rect x="150" y="140" width="56" height="30" rx="8" fill="#0F9D58"/>
+    <text x="178" y="161" font-family="Poppins, Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">$</text>
+  </g>
+
+  <!-- Automation gear -->
+  <g transform="translate(400,90)">
+    <g fill="#ffffff" opacity="0.95">
+      <path d="M60 20 l7 0 l4 14 a44 44 0 0 1 12 7 l14 -4 l4 6 l-9 12 a44 44 0 0 1 0 14 l9 12 l-4 6 l-14 -4 a44 44 0 0 1 -12 7 l-4 14 l-7 0 l-4 -14 a44 44 0 0 1 -12 -7 l-14 4 l-4 -6 l9 -12 a44 44 0 0 1 0 -14 l-9 -12 l4 -6 l14 4 a44 44 0 0 1 12 -7 Z"/>
+    </g>
+    <circle cx="63" cy="83" r="20" fill="#DD0031"/>
+    <circle cx="63" cy="83" r="9" fill="#ffffff"/>
+  </g>
+
+  <!-- coins -->
+  <g transform="translate(430,250)">
+    <ellipse cx="30" cy="60" rx="42" ry="14" fill="#ffd54f"/>
+    <ellipse cx="30" cy="46" rx="42" ry="14" fill="#ffca28"/>
+    <ellipse cx="30" cy="32" rx="42" ry="14" fill="#ffd54f"/>
+    <text x="30" y="38" font-family="Poppins, Arial, sans-serif" font-size="18" font-weight="700" fill="#8a6d00" text-anchor="middle">$</text>
+  </g>
+
+  <!-- title -->
+  <text x="40" y="372" font-family="Poppins, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff">Payroll Management System</text>
+</svg>

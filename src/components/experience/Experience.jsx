@@ -21,88 +21,60 @@ import {
     SkillTag,
 } from "./Experience.styles";
 
-import Stars from "../../images/star2.jpg";
-
 export const Experience = () => {
 
     const experienceDetails = [
         {
           icon: Chubb,
           orgName: "CHUBB",
-          role: "Technology Intern",
-          timeLine: "Dec 2023 - Present",
-          description: "At this point of time I am currently undergoing training program which includes various tech stacks and will later be assigned to a particular track",
+          role: "Software Development Engineer",
+          timeLine: "Jul 2024 - Present",
+          description: "I own full-stack features on a large enterprise insurance platform (Duck Creek) — designing, developing, and optimizing C#/.NET back-end components from requirements through testing, code review, and integration. Facing a manual, error-prone release process, I engineered a C#/.NET automation tool that cut manual processing time by 87% and earned formal recognition from leadership, and built a screenshot utility that automates QA evidence capture, saving ~1.5 hours per regression cycle and now adopted by multiple external teams.",
           tags: [
-            {
-              id: "1",
-              item: "SQL",
-            },
-            {
-              id: "2",
-              item: "Angular",
-            },
-            {
-              id: "3",
-              item: "Python",
-            },
-            {
-              id: "4",
-              item: "C#",
-            },
+            { id: "1", item: "C#" },
+            { id: "2", item: ".NET" },
+            { id: "3", item: "Duck Creek" },
+            { id: "4", item: "SQL" },
+            { id: "5", item: "Automation" },
+          ],
+        },
+        {
+          icon: Chubb,
+          orgName: "CHUBB",
+          role: "Software Engineering Intern",
+          timeLine: "Dec 2023 - Jun 2024",
+          description: "Trained intensively in .NET and Angular (TypeScript) and applied both to full-stack development of internal applications, delivering a capstone project that integrated a .NET REST back end with an Angular front end.",
+          tags: [
+            { id: "1", item: ".NET" },
+            { id: "2", item: "Angular" },
+            { id: "3", item: "TypeScript" },
+            { id: "4", item: "SQL" },
           ],
         },
         {
           icon: Hyperledger,
           orgName: "Hyperledger (LFX)",
           role: "Front End Contributor",
-          timeLine: "July 2023 - Nov 2023",
-          description: "I was selected as a part of LFX Mentorship program. During my time here I was a part of a team which was responsible for improving the onboarding part of hyperledger's official website.",
+          timeLine: "Jul 2023 - Nov 2023",
+          description: "Selected for the LFX Mentorship program, I worked with a team responsible for improving the onboarding experience on Hyperledger's official website under the Linux Foundation.",
           tags: [
-            {
-              id: "1",
-              item: "React.Js",
-            },
-            {
-              id: "2",
-              item: "HTML",
-            },
-            {
-              id: "3",
-              item: "CSS",
-            },
-            {
-              id: "4",
-              item: "JavaScript",
-            },
-            {
-              id: "4",
-              item: "Figma",
-            },
+            { id: "1", item: "React.Js" },
+            { id: "2", item: "HTML" },
+            { id: "3", item: "CSS" },
+            { id: "4", item: "JavaScript" },
+            { id: "5", item: "Figma" },
           ],
         },
         {
           icon: Opengenus,
           orgName: "OpenGenus",
-          role: "Software Engineering Intern",
-          timeLine: "Dec 2022 - Nov 2023",
-          description: "During my software internship at OpenGenus, I developed a robust keylogger in C++, created a comprehensive restaurant management software, developed a dynamic Snake game in C++, designed and implemented an efficient trie-based spell checker, developed a calendar system in C++, researched and authored technical articles on algorithmic problems, and contributed to the book \"Master C Programming with Practical Projects\", and currently leading as the main author for the upcoming book \"Introduction to Algorithms for System Design.\"",
+          role: "Software Intern (C++)",
+          timeLine: "Jan 2023 - Dec 2023",
+          description: "Built developer utilities in C++ — including a trie-based spell-checker — applying core data structures and algorithms with attention to time and space complexity. Researched and authored technical articles on algorithms and systems topics with 15K+ views, and was recognized among the top 1% of interns for performance.",
           tags: [
-            {
-              id: "1",
-              item: "C++",
-            },
-            {
-              id: "2",
-              item: "HTML",
-            },
-            {
-              id: "3",
-              item: "CSS",
-            },
-            {
-              id: "4",
-              item: "JavaScript",
-            },
+            { id: "1", item: "C++" },
+            { id: "2", item: "DSA" },
+            { id: "3", item: "Technical Writing" },
           ],
         },
       ];
@@ -110,18 +82,12 @@ export const Experience = () => {
 
       
     return (
-        <ExperienceSection id="experience" style={{
-          backgroundImage: `url(${Stars})`,
-          backgroundAttachment: "fixed",
-          backgroundSize: "100% 100%",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-        }}>
+        <ExperienceSection id="experience">
             <ExperienceContainer>
                 <ExperienceP><StarGif src={ShootingStar}/>    EXPERIENCE </ExperienceP>
                 <ExperienceContent>
                 {experienceDetails.map((experience)=>(
-                    <ExperienceTile key={experience.orgName}>
+                    <ExperienceTile key={`${experience.orgName}-${experience.role}`}>
                       <ExperienceImg src={experience.icon} />
                       <ExperienceDetails>
                         <ExperienceOrg>{experience.orgName}</ExperienceOrg>

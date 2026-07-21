@@ -10,39 +10,201 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background-color: #05060a;
   font-family: Poppins, sans-serif;
   position: relative;
 }
 
 * {
-  scrollbar-color: #8e8e8e #fff;
+  scrollbar-color: #6a4bd1 #0a0d18;
   scrollbar-width: thin;
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 11px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #fff;
-  border-radius: 20px;
+  background: #0a0d18;
 }
 
 ::-webkit-scrollbar-track:active,
 ::-webkit-scrollbar-track:hover {
-  background-color: #fff;
+  background: #0a0d18;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #8e8e8e;
+  background: linear-gradient(180deg, #58a6ff, #a371f7 55%, #f778ba);
   border-radius: 20px;
+  border: 2px solid #0a0d18;
+  box-shadow: 0 0 8px rgba(88, 166, 255, 0.4);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #878787;
+  background: linear-gradient(180deg, #79b8ff, #c58cff 55%, #ff9dd0);
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background-color: #8e8e8e;
+  background: linear-gradient(180deg, #58a6ff, #a371f7);
+}
+
+/* ---- Rocket cursor ---- */
+body.rocket-cursor-active,
+body.rocket-cursor-active * {
+  cursor: none !important;
+}
+
+.rocket-cursor-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 999999;
+}
+
+.rocket-cursor-pos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  will-change: transform;
+  transition: opacity 0.2s ease;
+}
+
+.rocket-cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  will-change: transform;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.35));
+}
+
+.rocket-flame {
+  opacity: 0;
+  transform: scaleY(0.35);
+  transform-origin: 50% 62%;
+  transition: opacity 0.12s ease;
+}
+
+.rocket-cursor.igniting .rocket-flame {
+  opacity: 1;
+  animation: rocketFlame 0.16s infinite alternate;
+}
+
+@keyframes rocketFlame {
+  from {
+    transform: scaleY(0.8) scaleX(1);
+  }
+  to {
+    transform: scaleY(1.15) scaleX(0.82);
+  }
+}
+
+.rocket-puff {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(255, 255, 255, 0.4) 45%,
+    rgba(255, 255, 255, 0) 72%
+  );
+  filter: blur(1px);
+  animation: rocketPuff 0.7s ease-out forwards;
+}
+
+@keyframes rocketPuff {
+  0% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.7);
+  }
+}
+
+@media (pointer: coarse) {
+  .rocket-cursor-layer {
+    display: none;
+  }
+}
+
+/* ---- Background sky + shooting stars (behind page content) ---- */
+.starfield {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+  background: #05060a;
+}
+
+.starfield-bg {
+  position: absolute;
+  inset: 0;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shooting-star {
+  position: absolute;
+  width: 150px;
+  height: 2px;
+  background: linear-gradient(90deg, #ffffff, rgba(255, 255, 255, 0));
+  border-radius: 999px;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.75));
+  opacity: 0;
+  transform: rotate(-38deg);
+}
+
+.shooting-star-1 {
+  top: 10%;
+  left: 6%;
+  animation: shoot 11s ease-in 1s infinite;
+}
+
+.shooting-star-2 {
+  top: 26%;
+  left: 58%;
+  animation: shoot 14s ease-in 5s infinite;
+}
+
+.shooting-star-3 {
+  top: 48%;
+  left: 30%;
+  animation: shoot 17s ease-in 9s infinite;
+}
+
+.shooting-star-4 {
+  top: 8%;
+  left: 78%;
+  animation: shoot 13s ease-in 14s infinite;
+}
+
+@keyframes shoot {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) rotate(-38deg);
+  }
+  2% {
+    opacity: 1;
+  }
+  12% {
+    opacity: 0;
+    transform: translate(460px, 360px) rotate(-38deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(460px, 360px) rotate(-38deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shooting-star {
+    animation: none;
+  }
 }

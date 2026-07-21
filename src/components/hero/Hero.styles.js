@@ -10,9 +10,11 @@ import { GrArticle } from "react-icons/gr";
 export const HeroWrapper = styled("section")(() => ({
   display: "flex",
   flexDirection: "column",
+  justifyContent: "center",
   width: "100%",
   height: "100vh",
-  backgroundColor: "black",
+  paddingTop: "5rem",
+  backgroundColor: "transparent",
   position: "relative",
   "@media (max-width: 900px)": {
     height: "auto",
@@ -34,7 +36,7 @@ export const SectionContent = styled("div")(() => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  height: "65rem",
+  height: "58rem",
   gap: "10rem",
   position: "relative",
   "@media (max-width: 900px)": {
@@ -282,20 +284,40 @@ export const SkillsUl = styled("ul")(() => ({
   listStyle: "none",
   display: "flex",
   flexWrap: "wrap",
-  gap: "2.5rem",
+  gap: "1.6rem",
   "@media (max-width: 900px)": {
     justifyContent: "center",
   },
 }));
 
+const techFloat = keyframes({
+  "0%, 100%": { transform: "translateY(0)" },
+  "50%": { transform: "translateY(-8px)" },
+});
+
 export const SkillsUlLi = styled("li")(() => ({
-  width: "6.5rem",
-  height: "6.5rem",
+  width: "5.4rem",
+  height: "5.4rem",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
   borderRadius: "50%",
   backgroundColor: "white",
+  cursor: "pointer",
+  animation: `${techFloat} 5s ease-in-out infinite`,
+  transition: "box-shadow 0.3s ease",
+  "& svg": {
+    transition: "transform 0.6s ease",
+  },
+  "&:hover": {
+    boxShadow: "0 0 22px var(--glow, #ffffff)",
+  },
+  "&:hover svg": {
+    transform: "scale(1.22) rotate(360deg)",
+  },
+  "@media (prefers-reduced-motion: reduce)": {
+    animation: "none",
+  },
 }));
 
 export const SkillsUlLiImg = styled("img")(() => ({
