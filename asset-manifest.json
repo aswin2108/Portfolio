@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.15e1d634.css",
-    "main.js": "/Portfolio/static/js/main.8970888e.js",
+    "main.css": "/Portfolio/static/css/main.b541c2c2.css",
+    "main.js": "/Portfolio/static/js/main.bcfc3f19.js",
     "static/media/star2.jpg": "/Portfolio/static/media/star2.7a5b3ce054a8ab86e98f.jpg",
     "static/media/my-img.png": "/Portfolio/static/media/my-img.3bb4c95035729dfef791.png",
     "static/media/shooting-star.gif": "/Portfolio/static/media/shooting-star.6e83fe525284bdb6e61a.gif",
     "static/media/portfolioImg.jpg": "/Portfolio/static/media/portfolioImg.6684db7df4341f2573eb.jpg",
     "static/media/Hi.gif": "/Portfolio/static/media/Hi.d93720933c608f6178fb.gif",
+    "static/media/DP2.jpeg": "/Portfolio/static/media/DP2.c21be147638dfa5effa5.jpeg",
     "static/media/spyware.jpg": "/Portfolio/static/media/spyware.f3418bc5bb91e736906d.jpg",
     "static/media/tiaraImg.jpg": "/Portfolio/static/media/tiaraImg.1dec27d4d4c8be81bd9f.jpg",
     "static/media/GDSC.webp": "/Portfolio/static/media/GDSC.458be0a9a89be7dd53e4.webp",
@@ -19,11 +20,11 @@
     "static/media/payroll.svg": "/Portfolio/static/media/payroll.6039a49990ca9f5ea57418152769db5d.svg",
     "static/media/media-backup.svg": "/Portfolio/static/media/media-backup.b721c0d2c029fc5a7d22679c907040a1.svg",
     "index.html": "/Portfolio/index.html",
-    "main.15e1d634.css.map": "/Portfolio/static/css/main.15e1d634.css.map",
-    "main.8970888e.js.map": "/Portfolio/static/js/main.8970888e.js.map"
+    "main.b541c2c2.css.map": "/Portfolio/static/css/main.b541c2c2.css.map",
+    "main.bcfc3f19.js.map": "/Portfolio/static/js/main.bcfc3f19.js.map"
   },
   "entrypoints": [
-    "static/css/main.15e1d634.css",
-    "static/js/main.8970888e.js"
+    "static/css/main.b541c2c2.css",
+    "static/js/main.bcfc3f19.js"
   ]
 }
