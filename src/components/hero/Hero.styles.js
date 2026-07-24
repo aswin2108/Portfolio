@@ -1,6 +1,7 @@
 import { styled } from "@mui/material";
 import { keyframes } from "@emotion/react";
 import myImage from "../../images/my-img.png";
+import revealImage from "../../images/DP2.jpeg";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 import { FaFileContract } from "react-icons/fa";
@@ -237,12 +238,60 @@ export const HeroImage = styled("div")(() => ({
   animation: `${morphAnimation} 8s ease-in-out infinite, ${moveUpAnimation} 1.5s ease-in-out forwards`,
   borderRadius: "60% 40% 30% 70%/60% 30% 70% 40%",
   position: "relative",
+  overflow: "hidden",
   transition: "all 1s ease-in-out",
-  transform: "translateY(100%)", 
+  transform: "translateY(100%)",
   animationFillMode: "forwards",
+  "&:hover": {
+    cursor: "none",
+  },
   "@media (max-width: 500px)": {
     width: "28rem",
     height: "28rem",
+  },
+}));
+
+// Continuously shifting, deliberately lopsided base silhouette. The extreme,
+// asymmetric radii give an off-round teardrop/kidney form; the SVG turbulence
+// filter (below) then chews organic pseudopods and dents into that edge so it
+// reads as a living amoeba rather than a wobbling circle.
+const blobMorph = keyframes({
+  "0%": { borderRadius: "72% 28% 61% 39%/44% 68% 32% 56%" },
+  "20%": { borderRadius: "33% 67% 38% 62%/58% 33% 67% 42%" },
+  "40%": { borderRadius: "64% 36% 27% 73%/71% 55% 45% 29%" },
+  "60%": { borderRadius: "29% 71% 66% 34%/35% 41% 59% 65%" },
+  "80%": { borderRadius: "58% 42% 71% 29%/62% 30% 70% 38%" },
+  "100%": { borderRadius: "72% 28% 61% 39%/44% 68% 32% 56%" },
+});
+
+export const RevealBlob = styled("div")(() => ({
+  position: "absolute",
+  top: 0,
+  left: 0,
+  width: "17rem",
+  height: "17rem",
+  backgroundImage: `url(${revealImage})`,
+  backgroundRepeat: "no-repeat",
+  pointerEvents: "none",
+  opacity: 0,
+  // Centre the blob on the cursor coords that JS writes to left/top.
+  translate: "-50% -50%",
+  scale: "0.55",
+  willChange: "left, top, border-radius, opacity, scale",
+  borderRadius: "72% 28% 61% 39%/44% 68% 32% 56%",
+  // The turbulence filter displaces the rounded edge into organic amoeba
+  // lobes and indentations; it animates on its own via SMIL (see Hero.jsx).
+  filter: "url(#amoeba-edge)",
+  transition:
+    "opacity 0.45s ease, scale 0.5s cubic-bezier(0.22, 1, 0.36, 1)",
+  animation: `${blobMorph} 7s ease-in-out infinite`,
+  "&.is-active": {
+    opacity: 1,
+    scale: "1",
+  },
+  "@media (max-width: 500px)": {
+    width: "13rem",
+    height: "13rem",
   },
 }));
 

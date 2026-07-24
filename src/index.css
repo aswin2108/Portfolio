@@ -70,6 +70,13 @@ body.rocket-cursor-active * {
   transition: opacity 0.2s ease;
 }
 
+/* Hide the rocket while hovering the hero portrait so the revealed
+   image under the amoeba blob can be viewed unobstructed. */
+body.hero-reveal-active .rocket-cursor-layer {
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
 .rocket-cursor {
   position: absolute;
   top: 0;
